@@ -1,0 +1,28 @@
+ALGORITHM sentence_informer
+VAR
+    long, mots, voyelle : INTEGER;
+    phrase : STRING;
+    X : CHAR;
+BEGIN
+    long := 0;
+    mots := 1;
+    voyelle := 0;
+    phrase :="";
+    REPEAT
+        Write("Tapez le caractere suivant");
+        Read(X);
+        long := long + 1;
+        IF (X="a" OR X="e" OR X="i" OR X="o" OR X="u") THEN
+            voyelle := voyelle + 1;
+        END_IF
+        IF (X=" ") THEN
+            mots := mots +1
+        END_IF
+        phrase := phrase + x
+    UNTIL (X = ".")
+    Write(phrase);
+    Write(long);
+    Write(mots);
+    Write(voyelles);
+
+END
