@@ -1,0 +1,17 @@
+ALGORITHM sort-insertion
+VAR
+    i, j , n, x: INTEGER
+    arr : ARRAY_OF INTEGER
+
+BEGIN
+    FOR i FROM 0 TO n-1 STEP 1  DO
+        x := arr[i]
+        j := x - 1
+        WHILE ((arr[j] > x)) DO
+        arr[j + 1] := arr[j]
+            j := j - 1
+        END_WHILE
+        arr[j + 1] := x
+    END_FOR
+    write arr
+End

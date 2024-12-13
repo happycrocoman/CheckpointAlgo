@@ -19,7 +19,8 @@ BEGIN
             mots := mots +1
         END_IF
         phrase := phrase + x
-    UNTIL (X = ".")
+    UNTIL (X =
+     ".")
     Write(phrase);
     Write(long);
     Write(mots);
